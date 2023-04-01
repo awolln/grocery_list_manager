@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppGroceryComponent } from './app-grocery.component';
+import { GroceryComponent } from './app-grocery.component';
 
-describe('AppGroceryComponent', () => {
-  let component: AppGroceryComponent;
-  let fixture: ComponentFixture<AppGroceryComponent>;
+describe('GroceryComponent', () => {
+  let component: GroceryComponent;
+  let fixture: ComponentFixture<GroceryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppGroceryComponent ]
+      declarations: [ GroceryComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AppGroceryComponent);
+    fixture = TestBed.createComponent(GroceryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

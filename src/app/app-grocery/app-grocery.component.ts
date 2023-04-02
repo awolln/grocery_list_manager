@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-grocery.component',
+  selector: 'app-grocery',
   templateUrl: './app-grocery.component.html',
-  styleUrls: ['./app-grocery.component.css']
+  styleUrls: [
+    '../../assets/css/bootstrap.min.css'
+  ]
 })
 export class GroceryComponent {
-  task: any;
+  task: string;
   tasks = [];
+
   onClick(){
-    task: {name: String}
-  this.task = '';
+  	this.tasks.push({name: this.task});
+  	this.task = '';
   }
 }
-
